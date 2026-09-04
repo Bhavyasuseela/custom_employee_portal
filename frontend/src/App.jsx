@@ -137,7 +137,7 @@ function App() {
         setLoginError("");
 
         const response = await fetch(
-            "http://localhost:5000/api/auth/login",
+            "https://custom-employee-portal-backend.onrender.com/api/auth/login",
             {
                 method: "POST",
                 headers: {
@@ -182,7 +182,7 @@ function App() {
             setError("");
 
             const response = await fetch(
-                "http://localhost:5000/api/zoho/people",
+                "https://custom-employee-portal-backend.onrender.com/api/zoho/people",
                 {
                     method: "GET",
                     headers: {
@@ -199,7 +199,7 @@ function App() {
                 );
             }
 
-            setEmployees(data.employees || []);
+            setEmployees(data.data?.data || []);
         } catch (error) {
             console.error(error);
             setError(error.message);
@@ -220,7 +220,7 @@ function App() {
         setCrmError("");
 
         const response = await fetch(
-            "http://localhost:5000/api/zoho/crm",
+            "https://custom-employee-portal-backend.onrender.com/api/zoho/crm",
             {
                 method: "GET",
                 headers: {
