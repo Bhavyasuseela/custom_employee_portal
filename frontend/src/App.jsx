@@ -199,7 +199,7 @@ function App() {
                 );
             }
 
-            setEmployees(data.data?.data || []);
+            setEmployees(data.employees || []);
         } catch (error) {
             console.error(error);
             setError(error.message);
