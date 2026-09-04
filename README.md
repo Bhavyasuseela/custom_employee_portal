@@ -1,16 +1,66 @@
-# React + Vite
+# Custom Employee Portal
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A full-stack employee management portal built using React, Node.js, Express, PostgreSQL, JWT authentication, Role-Based Access Control (RBAC), and Zoho integrations.
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The Custom Employee Portal provides a centralized platform for managing employees and accessing different business services based on user roles and permissions.
 
-## React Compiler
+The application includes:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Secure user authentication
+- JWT-based authorization
+- Role-Based Access Control (RBAC)
+- Employee management
+- Zoho People integration
+- Zoho CRM integration
+- Zoho Desk demonstration module
+- Zoho Books demonstration module
+- PostgreSQL database
+- Permission-based service access
 
-## Expanding the Oxlint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### Frontend
+- React
+- Vite
+- JavaScript
+- CSS
+
+### Backend
+- Node.js
+- Express.js
+- PostgreSQL
+- JWT
+- bcryptjs
+
+### Integrations
+- Zoho People
+- Zoho CRM
+- Zoho Desk
+- Zoho Books
+
+## System Architecture
+
+```text
+User
+  |
+  v
+React Frontend
+  |
+  v
+Node.js + Express Backend
+  |
+  +---- PostgreSQL Database
+  |
+  +---- JWT Authentication
+  |
+  +---- Role-Based Access Control
+  |
+  +---- Zoho People
+  |
+  +---- Zoho CRM
+  |
+  +---- Zoho Desk
+  |
+  +---- Zoho Books
